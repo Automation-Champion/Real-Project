@@ -40,9 +40,11 @@
 						<goals>
 							<goal>generate</goal>
 						</goals>
-						<configuration>
+							<configuration>
 							<outputDirectory>target/cucumber-reports/advanced-reports</outputDirectory>
 							<cucumberOutput>target/cucumber-reports/CucumberTestReport.json</cucumberOutput>
+							<outputDirectory>${project.build.directory}/goutham-cucumber-reports</outputDirectory> 
+								<cucumberOutput>${project.build.directory}/cucumber-reports</cucumberOutput>
 						</configuration>
 					</execution>
 				</executions>
